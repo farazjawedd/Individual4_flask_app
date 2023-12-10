@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Text Summarizer</h2>
+
+    <form method="POST">
+        <label for="input">Text to summarize:</label>
+        <textarea id="input" name="input" rows="10"></textarea>
+
+        <label for="max_length">Maximum summary length:</label>
+        <input type="number" id="max_length" name="max_length" min="1" value="130">
+
+        <label for="min_length">Minimum summary length:</label>
+        <input type="number" id="min_length" name="min_length" min="1" value="30">
+
+        <input type="submit" value="Summarize">
+    </form>
+</div>
+
+</body>
+</html>
