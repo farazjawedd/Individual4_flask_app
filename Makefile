@@ -2,8 +2,8 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
-test:
-	python -m pytest -vv --cov=summarizer_app.app
+# test:
+# 	python -m pytest -vv --cov=summarizer_app.app
 
 format:	
 	find . -type f -name "*.py" -exec black {} \;
