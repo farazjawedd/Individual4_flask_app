@@ -104,18 +104,6 @@ This auto-scaling Flask app simplifies text summarization using BART, providing 
 By following these usage instructions, you can seamlessly harness the power of BART text summarization through a user-friendly interface, making complex information more accessible and manageable.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 -------------
 
 
@@ -128,17 +116,13 @@ The Github Action workflow and pipeline has the following:
 - main.py for your project code
 - test_main.py for testing your code
 
+This project passes the Github Workflow and CICD Pipeline.
+
 ## Getting Started
 
 1. Clone this repository to your local machine.
 2. Install Python 3.x on your system.
-3. (Optional) Install Docker for containerization.
-4. (Optional) Install Visual Studio Code with the "Remote - Containers" extension.
-
-## Usage
-
-- Run your project's `main.py` script using Python.
-- Test your code with the provided `test_main.py` script.
-- Use the Makefile commands for common tasks, e.g., `make install-dependencies`, `make run`, `make test`.
+3. Run the app.py in the summarizer_app folder.
+4. You can give out any port from your computer or run the dockerized version.
 
 - This also includes a docker container for running your scripts on a virtual envt. 
