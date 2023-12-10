@@ -1,56 +1,52 @@
-# Databricks ETL pipeline
+# Text Summarization with bart
 [![CI](https://github.com/farazjawedd/python-template-ids706/actions/workflows/cicd.yml/badge.svg)](https://github.com/farazjawedd/python-template-ids706/actions/workflows/cicd.yml)
 
-Demo video: https://youtu.be/sZw3zFSSMnw
+Demo video: xxxxxxxx
 
-This project demonstrates a Databricks-based ETL pipeline that extracts data, performs transformations using Spark SQL, loads the transformed data into Delta Lake, and visualizes the results. It includes features such as automated triggers and data validation.
+## Project Overview
 
-## ETL Pipeline
+This project focuses on building an auto-scaling Flask application hosted on Azure, incorporating BART (Bidirectional and Auto-Regressive Transformers) for text summarization. Users can input text, specify minimum and maximum tokens for summarization, and receive a summarized output. The application is containerized using Docker and deployed on Azure Web App Service.
 
-#### Extract: 
-We fetch the data from a github repository where it is hosted. The dataset is basically on world happiness index in 2020 for each country. Here is the screenshot for the notebook which loads the data in a pandas dataframe, converts it into a pyspark dataframe and loads it into a delta lake.
 
-<img width="925" alt="Screenshot 2023-11-26 at 7 29 45 PM" src="https://github.com/farazjawedd/Individual3_databricks/assets/101464414/7f5b3648-aff1-43bf-8bf1-1a0a0e727429">
+## Requirements
 
-#### Transform and Load:
-Then we transform the dataset to only get what is useful to us. In this case, I used `spark.sql` to query the columns I wanted and grouped the data by the continent, to evaluate the avg freedom and avg corruption in each continent, here is the notebook screenshot for it:
+### Dependencies
+- Python
+- Flask
+- Docker
+- Azure Account with App Services
 
-<img width="757" alt="Screenshot 2023-11-26 at 7 31 46 PM" src="https://github.com/farazjawedd/Individual3_databricks/assets/101464414/24c330d5-8c1b-4f2b-849f-227de7397d16">
+## The Web App
 
-#### Visualize:
-In order to visualize, I plotted it into a simple line plot to see how each continent compares with each. The visualize notebook:
+Link: 
 
-<img width="851" alt="Screenshot 2023-11-26 at 7 33 08 PM" src="https://github.com/farazjawedd/Individual3_databricks/assets/101464414/fd513f24-5227-46bf-afc4-f5c50e4a452b">
+### Project Structure
 
-Here is the final plot:
+### `/summarizer_app`
 
-<img width="660" alt="Screenshot 2023-11-26 at 7 33 26 PM" src="https://github.com/farazjawedd/Individual3_databricks/assets/101464414/b3c6df86-6230-423f-9cd1-11c94c23d2a6">
+This directory contains the core components of the Flask application:
 
-### WorkFlow:
-In order to have an automated pipeline, we can set up a workflow on databricks, which has each of the notebooks as jobs and set up an automated trigger so that it runs automatically and updates everything. Here is the screenshot of the workflow:
+- **`/summarizer_app/app.py`**: The main Flask application file responsible for handling routes and user interactions.
 
-<img width="876" alt="Screenshot 2023-11-26 at 7 34 56 PM" src="https://github.com/farazjawedd/Individual3_databricks/assets/101464414/7e3823ea-a426-482e-8f47-3e433f8ea11d">
+- **`/summarizer_app/app_logic.py`**: The logic module where BART text summarization is implemented. This file holds the essential functionality of the summarization process.
 
-I manually triggered it a few times to see if it's working:
+- **`/summarizer_app/templates`**: This directory houses HTML templates for the frontend. These templates define the structure and layout of the user interface.
 
-<img width="943" alt="Screenshot 2023-11-26 at 7 35 27 PM" src="https://github.com/farazjawedd/Individual3_databricks/assets/101464414/4598acec-2c7b-4c1d-861a-081f8566aeb9">
+- **`/summarizer_app/static`**: CSS files reside here, providing styles for the frontend, ensuring an aesthetically pleasing user experience.
 
-The associated `py` files for my notebooks on databricks are in the `Databricks Notebooks` folder in the repository.
+-  `/summarizer_app/Dockerfile`**: The file which dockerizes the entire app and makes it easy to host and deploy it.
 
-#### Benefits of delta lake:
-Some of the benefits I learned about Delta lake:
+This directory encompasses Docker configuration files, enabling the containerization of the application for easy deployment and scalability.
 
-- Schema Evolution:
-Supports easy evolution of data schema without complex migration.
 
-- Time Travel:
-Enables querying historical data snapshots for auditing and debugging.
 
-- Optimized Data Compaction:
-Automatically handles data compaction, reducing storage footprint.
 
-- Concurrency Control:
-Manages multiple read and write operations for data consistency.
+
+
+
+
+
+
 
 
 -------------
