@@ -1,5 +1,5 @@
 # Text Summarization with bart
-([![CiCd](https://github.com/farazjawedd/Individual4_flask_app/actions/workflows/cicd.yml/badge.svg)](https://github.com/farazjawedd/Individual4_flask_app/actions/workflows/cicd.yml))
+[![CiCd](https://github.com/farazjawedd/Individual4_flask_app/actions/workflows/cicd.yml/badge.svg)](https://github.com/farazjawedd/Individual4_flask_app/actions/workflows/cicd.yml)
 
 ## Project Overview
 
