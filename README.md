@@ -1,8 +1,6 @@
 # Text Summarization with bart
 [![CI](https://github.com/farazjawedd/python-template-ids706/actions/workflows/cicd.yml/badge.svg)](https://github.com/farazjawedd/python-template-ids706/actions/workflows/cicd.yml)
 
-Demo video: xxxxxxxx
-
 ## Project Overview
 
 This project focuses on building an auto-scaling Flask application hosted on Azure, incorporating BART (Bidirectional and Auto-Regressive Transformers) for text summarization. Users can input text, specify minimum and maximum tokens for summarization, and receive a summarized output. The application is containerized using Docker and deployed on Azure Web App Service.
