@@ -1,4 +1,5 @@
-from flask import Flask, request, jsonify, render_template, redirect, url_for
+'''Imports'''
+from flask import Flask, request, render_template, redirect, url_for
 import app_logic
 
 app = Flask(__name__)
