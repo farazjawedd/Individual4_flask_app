@@ -53,10 +53,23 @@ Summary page:
 
 Error handling is also done here which returns an error if you don't enter any text.
 
+## Use of Dockerhub
 
+The app was containerized using docker and the image was put on public on dockerhub:
 
+<img width="971" alt="Screenshot 2023-12-10 at 5 50 16 PM" src="https://github.com/farazjawedd/Individual4_flask_app/assets/101464414/f976a583-b9c9-4855-92e4-fb2fcfa5dfaf">
 
+## Hosted on Azure
 
+In order for the app to be scaleable and used by multiple users at the same time, I deployed this app using Azure. 
+
+Here are the screenshots for it:
+
+<img width="1463" alt="Screenshot 2023-12-10 at 5 52 25 PM" src="https://github.com/farazjawedd/Individual4_flask_app/assets/101464414/60e52d1c-b485-46eb-85df-caf07e43af0f">
+
+The scale plan:
+
+<img width="1293" alt="Screenshot 2023-12-10 at 5 52 44 PM" src="https://github.com/farazjawedd/Individual4_flask_app/assets/101464414/7d35088f-7ab6-4bfc-a39a-c9639e58ad7b">
 
 
 
