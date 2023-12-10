@@ -18,7 +18,7 @@ This project focuses on building an auto-scaling Flask application hosted on Azu
 
 ## The Web App
 
-Link: 
+Link: https://gsummarizer.azurewebsites.net/
 
 ### Project Structure
 
@@ -34,9 +34,63 @@ This directory contains the core components of the Flask application:
 
 - **`/summarizer_app/static`**: CSS files reside here, providing styles for the frontend, ensuring an aesthetically pleasing user experience.
 
--  `/summarizer_app/Dockerfile`**: The file which dockerizes the entire app and makes it easy to host and deploy it.
+- ** `/summarizer_app/Dockerfile`**: This file encompasses Docker configuration, enabling the containerization of the application for easy deployment and scalability.
 
-This directory encompasses Docker configuration files, enabling the containerization of the application for easy deployment and scalability.
+
+## Features:
+
+Homepage (default):
+<img width="938" alt="Screenshot 2023-12-10 at 5 47 20 PM" src="https://github.com/farazjawedd/Individual4_flask_app/assets/101464414/7362f01f-d726-47dd-97bc-66340434d252">
+
+This page allows you to enter text and specify how long you want the summary to be.
+
+Let's summarize some text:
+<img width="884" alt="Screenshot 2023-12-10 at 5 48 35 PM" src="https://github.com/farazjawedd/Individual4_flask_app/assets/101464414/adc2102d-ce85-4893-b34b-c57f8a60e76d">
+
+Summary page:
+<img width="912" alt="Screenshot 2023-12-10 at 5 49 04 PM" src="https://github.com/farazjawedd/Individual4_flask_app/assets/101464414/931f9295-9972-44f9-807c-4fc15ce181de">
+
+
+Error handling is also done here which returns an error if you don't enter any text.
+
+
+
+
+
+
+
+
+## Usage
+
+This auto-scaling Flask app simplifies text summarization using BART, providing an intuitive user experience. Follow these steps to harness its capabilities:
+
+1. **Access the App:**
+   Open the application in your web browser at `http://gsummarizer.azurewebsites.net/` or on your local host port `8080` after running the Docker container incase you clone this repository.
+
+2. **Input Text:**
+   Enter the text you wish to summarize in the designated input field.
+
+3. **Specify Token Parameters:**
+   Tailor your summary by indicating the minimum and maximum tokens desired. This allows you to control the length and depth of the summarization.
+
+4. **Initiate Summarization:**
+   Click the "Summarize" button to trigger the BART summarization process. Witness the application's efficiency in distilling complex text into concise summaries.
+
+5. **Review Results:**
+   The summarized output will be displayed on the webpage, providing you with a clear and digestible version of the original text.
+
+6. **Experiment and Refine:**
+   Feel free to experiment with different texts, token parameters, and summarization scenarios. Refine your usage to match specific content types and summarization needs.
+
+7. **Explore Docker and Azure Deployment:**
+   For a broader experience, explore deploying the app using Docker and Azure Web App. Evaluate its scalability and accessibility in a production environment.
+
+8. **Share and Collaborate:**
+   Share your summarized content or collaborate with others by demonstrating the app's functionalities. Encourage exploration and feedback within the user community.
+
+By following these usage instructions, you can seamlessly harness the power of BART text summarization through a user-friendly interface, making complex information more accessible and manageable.
+
+
 
 
 
